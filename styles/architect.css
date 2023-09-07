@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Work+Sans:ital,wght@0,400;0,700;0,800;1,200;1,500&display=swap');
 *{
-    font-family: 'Lato', sans-serif;
     font-family: 'Work Sans', sans-serif;
     font-family: 'Open Sans',sans-serif;
+    
 }
 header{
     background: rgba(255, 144, 14, 0.10);
-    padding: 50px 240px;
+    padding: 50px 140px;
 }
 nav{
     display: flex;
@@ -46,4 +46,76 @@ margin: 0 auto;
     color:#727272;
     font-size: 1rem;
     font-weight: 400;
+}
+.btn-primary{
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 20px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: 0;
+}
+.banner img{
+    width: 100%;
+    margin-top: 10px;
+}
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.team-content{
+    display: flex;
+    margin-top: 85px;
+    align-items: center;
+}
+.team-image-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+    border-radius: 8px;
+}
+.team-heading{
+color:#727272;
+font-size: 2.8rem;
+font-weight: 500;
+font-family: Work Sans;
+}
+.black-bold{
+color:#131313;
+font-weight: 700;
+}
+.orange-txt{
+    color: #FF900E;
+    font-weight: 700;
+   
+}
+.team-description{
+    padding-left: 60px;
+    padding-right: 70px;
+}
+
+
+
+
+/**Mobile and other devices**/
+@media screen and (max-width: 576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction:column;
+    }
+    .team-image-container{
+        grid-template-columns: ;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    header{
+        padding: 50px;
+    }
+    nav{
+        flex-direction:column;
+    }
+
 }
