@@ -112,21 +112,22 @@ margin-bottom: 8px;
 .facts-card-container .card{
     border: 1px solid #FF900E;
     border-radius: 8px;
-    padding: 40px;
     text-align: center;
+    padding: 40px;
 }
 .facts-card-container .card-title{
     font-weight: 600;
-    color:#727272;
     font-size: 1.25rem;
+    color:#727272;
+    margin-top: 5px;
 }
 .facts-card-container .card-stats{
     color:#424242;
     text-align: center;
-    font-family: Work Sans;
     font-size: 2rem;
     font-weight: 600;
-    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /*.sponser-container{
