@@ -102,7 +102,46 @@ font-weight: 600;
 margin-bottom: 8px;
 
 }
+.feature-content{
+    margin-top: 120px;
+    display: flex;
+}
+.architect-image img{
+    height: 100%;
+    margin-left: 90px;
+}
 
+.card{
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.features .heading{
+    border-left: 5px solid #FF900E;
+    padding-left: 15px;
+}
+.ten-years-badge{
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    width: 342px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+.ten-years-badge h2{
+    font-size: 4rem;
+    margin: 0;
+}
+
+
+/*Fact card Part*/
+.fact-content{
+    margin-top: 100px;
+}
 .facts-card-container{
     display: flex;
     align-items: center;
@@ -129,29 +168,44 @@ margin-bottom: 8px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
-/*.sponser-container{
-    
-    margin-top: 11rem;
-}
-.sponser-container .sponser-headings{
-    text-align: center;   
-}
 .sponser-headings{
-    padding-bottom: 3.2rem;
-    max-width: 540px;
-    margin-left: 30%;   
-}*/
+   text-align: center; 
+}
+.sponser-img-container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
 
-
+}
+.sponser-img-container img{
+    width:155px;
+}
+.footerd{
+    border-radius: 8px;
+    background: #FFF4E7;
+    max-width: 1440px;
+    height: 100px;
+    text-align: center;
+    margin:100px auto;
+}
+.ft{
+    padding: 38px 410px;
+    color:#424242;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
 /**Mobile and other devices**/
 @media screen and (max-width: 576px) {
     header{
         padding: 20px;
     }
-    nav,
+    nav,.feature-content,
     .team-content,
-    .facts-card-container{
+    .facts-card-container,
+    .sponser-img-container{
        flex-direction: column;
     }
     
@@ -161,15 +215,30 @@ margin-bottom: 8px;
     .sponser-headings .light-grey-colour{
         margin: 0 ;
     }
-    
+    .architect-image img{
+        width: 100%;
+        margin: 0;
+    }
+    .ten-years-badge{
+        position: static;
+        max-width: 300px;
+    }
+    .footerd{
+        max-width: 100%;
+    }
+    .ft{
+        padding: 0;
+    }
     
 }
 /**Tablet and other devices**/
 @media screen and (min-width: 576px) and (max-width: 960px) {
-    header{
+    header,.ft{
         padding: 50px;
     }
-    nav,.team-content{
+    nav,.team-content,
+    .feature-content,
+    .sponser-img-container{
         flex-direction:column;
     }
 
